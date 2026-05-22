@@ -3,7 +3,7 @@ import localFont from "next/font/local";
 import useOverlayStore from "./store/overlayStore";
 import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
+// import { InteractiveHoverButton } from "@/components/ui/interactive-hover-button";
 
 // Preload the custom font
 const nyghtFont = localFont({
@@ -15,7 +15,7 @@ const nyghtFont = localFont({
 
 export default function Home() {
   const toggleOpenOverlayFn = useOverlayStore(
-    (state) => state.toggleOpenOverlay
+    (state) => state.toggleOpenOverlay,
   );
 
   return (
@@ -52,7 +52,7 @@ export default function Home() {
 
         <h1 className="gradient-text animate-fadeInUp relative z-10 mt-4 mb-7 flex flex-col items-center justify-center text-center text-xl delay-600 sm:flex-row md:text-xl lg:mt-7 lg:text-2xl">
           <span className="grad-white flex items-center justify-center">
-            Hi, I'm Karthik Baduganti -{" "}
+            Hi, I&apos;m Karthik Baduganti -{" "}
             <span
               className={`${nyghtFont.variable} font-nyght gradient-text leading-relaxed ml-2 !text-purple-400`}
             >
@@ -67,7 +67,7 @@ export default function Home() {
             onClick={toggleOpenOverlayFn}
           >
             <span className="z-10 px-3 text-white transition-colors duration-300 group-hover:text-black">
-              Let's Connect
+              Let&apos;s Connect
             </span>
             <span className="absolute inset-0 translate-x-[45%] scale-0 rounded-full bg-white opacity-0 transition-all duration-300 ease-in-out group-hover:translate-x-0 group-hover:scale-100 group-hover:opacity-100"></span>
             <span className="z-10 flex items-center justify-center overflow-hidden rounded-full bg-white p-2 transition-colors duration-300 group-hover:bg-transparent md:p-2.5">

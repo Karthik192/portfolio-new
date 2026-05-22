@@ -8,7 +8,9 @@ interface OverlayState {
 export const useOverlayStore = create<OverlayState>((set) => ({
   openOverlay: false,
   toggleOpenOverlay: () =>
-    set((state: { openOverlay: any }) => ({ openOverlay: !state.openOverlay })),
+    set((state: { openOverlay: boolean }) => ({
+      openOverlay: !state.openOverlay,
+    })),
 }));
 
 export default useOverlayStore;

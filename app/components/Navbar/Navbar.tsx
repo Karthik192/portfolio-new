@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/images/Logo.png";
 import Image from "next/image";
+import Link from "next/link";
 
 function Navbar() {
   return (
@@ -11,7 +12,7 @@ function Navbar() {
           <div className="pointer-events-none absolute inset-0 z-10 opacity-100 blurred-background"></div>
         </div>
       </div>
-      <a
+      <Link
         href="/"
         className="z-40 animate-fadeInLeft size-8 p-1 drop-shadow-xl delay-200 md:size-9"
       >
@@ -23,7 +24,7 @@ function Navbar() {
           src={Logo}
           alt="logo"
         />
-      </a>
+      </Link>
       <nav
         aria-label="Main"
         className="z-40 flex max-w-max flex-1 items-center justify-center absolute left-1/2 top-1/2 w-full -translate-x-1/2 -translate-y-1/2"
@@ -31,44 +32,44 @@ function Navbar() {
         <div className="relative">
           <ul className="group flex-1 list-none items-center justify-center gap-x-1 relative hidden rounded-full border border-white/10 bg-white/5 px-2 py-1 backdrop-blur-sm lg:flex">
             <li>
-              <a
+              <Link
                 className="inline-block px-4 py-1.5 text-sm font-light text-white/70 transition-[text-shadow,color] duration-300 hover:text-white/85"
                 href="/"
               >
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="inline-block px-4 py-1.5 text-sm font-light text-white/70 transition-[text-shadow,color] duration-300 hover:text-white/85"
                 href="/"
               >
                 Work
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="inline-block px-4 py-1.5 text-sm font-light text-white/70 transition-[text-shadow,color] duration-300 hover:text-white/85"
                 href="/"
               >
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="inline-block px-4 py-1.5 text-sm font-light text-white/70 transition-[text-shadow,color] duration-300 hover:text-white/85"
                 href="/"
               >
                 Blog
-              </a>
+              </Link>
             </li>
             <li>
-              <a
+              <Link
                 className="inline-block px-4 py-1.5 text-sm font-light text-white/70 transition-[text-shadow,color] duration-300 hover:text-white/85"
                 href="/"
               >
                 More
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
